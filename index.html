@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="tr-TR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<title>Javascipt example</title>
+</head>
+
+<body>
+<div id="emails"></div>
+<br />
+<div id="test">Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt ALEX10_FB@hotmail.com Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Ragnar33@hotmail.com Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt Javascipt 
+ Javascipt Javascipt Javascipt Javascipt Javascipt Khaleesi_Westeros@gmail.com Javascipt Javascipt Javascipt Javascipt Javascipt 
+ 
+</div>
+<script type="text/javascript" language="javascript">
+	var text		=	document.getElementById("test").innerHTML; //to read paragraph
+	var pattern		=	/[A-Z0-9a-z_.-]+@[A-Z0-9a-z\-]+\.[A-Za-z]{2,3}/gi; //The first part to find left side of '@' and The second part to find between '@' and '.' Last part to find right side of '.'  
+	var finded		=	text.match(pattern);
+	document.getElementById("emails").innerHTML = finded+"\n";
+</script>
+</body>
+</html>
